@@ -1,4 +1,6 @@
-﻿namespace MauiDemo
+﻿using System.Net.WebSockets;
+
+namespace MauiDemo
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new AbsoluteLayoutDemo());
         }
     }
 }
